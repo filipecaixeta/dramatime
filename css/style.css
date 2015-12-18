@@ -1,0 +1,167 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	/*cursor: none;*/
+	font-family:georgia, serif;
+	color: #cacaca;
+}
+
+body {
+	background-color: #181818;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+#titleBar
+{
+	position: absolute;
+	left: 0px;
+	right:0px;
+	top: 0px;
+	height: 75px;
+	padding: 15px 0px 0px 20px;
+	border-bottom: 2px;
+	
+	background: #212121;  
+	font-size: 48px;
+	box-shadow: 0px 2px 2px 2px #000000;
+	font-family:georgia, serif;
+}
+
+/*	/////////////////////////
+	//                     //
+	//       LAYER 1       //
+	//                     //
+	/////////////////////////*/
+
+#dramasList
+{
+	position: absolute;
+	left: 0px;
+	top: 100px;
+	right: 410px;
+	height: auto;
+	overflow-y: auto;
+	overflow-x: hidden;
+	         
+	background-color: #181818;         
+	border: 0px;         
+	padding: 20px 0px 0px 20px;
+}
+.row
+{
+	display:table-row;
+	width:auto;
+	clear:both;
+}
+.cell
+{
+	display:block;
+	float:left;
+	width: 120px;       
+	margin: 0px 14px 25px 0px;
+	border: 2px solid #181818;
+	
+	text-align: center;
+	font-size: 14px;
+}
+.cell.selected
+{
+	-webkit-box-shadow: 0px 0px 10px 5px rgba(202,202,202,1);
+	-moz-box-shadow: 0px 0px 10px 5px rgba(202,202,202,1);
+	box-shadow: 0px 0px 10px 5px rgba(202,202,202,1);	
+}
+/*	/////////////////////////
+	//                     //
+	//       LAYER 2       //
+	//                     //
+	/////////////////////////*/
+
+#sideInfo
+{
+	position: absolute;
+	width: 370px;
+	right: 0px;
+	top: 90px;
+	bottom: 0px;
+	padding: 20px;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	
+	background: #121212; 
+	border: 0px; 
+	color: #f0f0f0;
+}
+#plot
+{
+	margin: 0px 0px 20px 0px;
+	font-size: 14px;
+	color: #FFFFFF;
+	text-align: justify;
+}
+.plotTitle
+{
+	font-size: 24px;
+	padding-bottom: 20px;
+}
+#episodeList
+{
+	overflow-y: auto;
+	overflow-x: hidden;
+	font-size: 14px;
+}
+#episodeList >.selected
+{
+	font-size: 16px;
+	color: red;
+}
+/*	/////////////////////////
+	//                     //
+	//       LAYER 3       //
+	//                     //
+	/////////////////////////*/
+
+
+
+
+
+
+
+a:link {color: #f0f0f0;}
+a:visited {color: #f0f0f0;}
+a:hover {color: #f0f0f0;}
+a:active {color: #f0f0f0;}
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #000000;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: #4d4d4d;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #000000;
+}
+::-webkit-scrollbar-track:active {
+  background: #000000;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}

@@ -1,0 +1,114 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #FFFFF0;
+	overflow: hidden;
+}
+
+.clsCard {
+	position: absolute;
+	width: 10%;
+	height: 18%;
+	border: 1px outset gray;
+}
+
+.clsCardHide {
+	position: absolute;
+	width: 10%;
+	height: 18%;
+	border: 1px dotted white;
+}
+
+.clsCardInner {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+/*	border: 1px outset gray;	*/
+}
+
+#infoPanel {
+	position: absolute;
+	width: 40%;
+	height: 100%;
+	text-align: center;
+	left: 60%;
+	color: red;
+	font-size: 28px;
+/*	border: 1px solid red;	*/
+}
+
+.gameTitle {
+	font-size: 36px;
+	font-weight: bold;
+	color: blue;
+}
+
+.infoRow {
+	display: inline-block;
+	color: red;
+	font-weight: bold;
+	text-align: left;
+	width: 25%;
+/*	border: 1px solid red;	*/
+}
+
+#restartGame {
+	display: inline-block;
+	width: 10%;
+}
+
+.clsHeight5Percent {
+	height: 5%;
+}
+
+.clsHeight15Percent {
+	height: 15%;
+/*	border: 1px solid red;	*/
+}
+
+
+#restartGame {
+	width: 150px;
+	height: 70px;
+	font-size: 24px;
+	font-weight: bold;
+	color: #DAA520;
+}
+
+#gameOverPanel {
+	position: absolute;
+	z-index: 1000;
+	left: 20%;
+	top: 25%;
+	width: 60%;
+	height: 50%;
+	background-color: #F5F5F5;
+	border: 1px outset white;
+	text-align: center;
+	display: none;	
+}
+
+.gameOver {
+	padding-top: 10%;
+}
+
+#closeAlert {
+	width: 25%;
+	height: 20%;
+	margin-top: 7%;
+}
+
+#alertScore {
+	color: red;
+}
+
+.cardFocusIn {
+	border: 2px outset blue;
+}
+
+
+
