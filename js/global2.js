@@ -51,7 +51,6 @@
 	{
 		layer1.rowMaxElem = (($("#dramasList").width()-20)/138)>>0;
 		layer1.getPage(layer1.currentPageLoaded);
-		console.log("aqui");
 	};
 	layer1.getPage = function (n) 
 	{
@@ -78,8 +77,8 @@
 					layer1.lastElement=id;
 					layer1.appendDrama(id);
 				}
-				// if (layer1.currentPageLoaded==1)
-				// 	layer1.select();
+				if (layer1.currentPageLoaded==1)
+					layer1.select();
 
 				if (layer1.currentPageLoaded!=0)
 				{
@@ -357,6 +356,7 @@
 	      	}
 		});
 		$("#videoEpisode").css("visibility", "visible");
+		$("video").css("visibility", "visible");
 		$("#videoEpisode").height($( document ).height()-90);
 		$("#videoEpisode").width($( document ).width()-410);
 		layer3.playRate=1;
@@ -397,6 +397,7 @@
 		layer3.normalScreen();
 		$("#dramasList").show();
 		$("#videoEpisode").css("visibility", "hidden");
+		$("video").css("visibility", "hidden");
 		currentLayer=layer2;
 		layer2.select();
 	}
@@ -494,22 +495,10 @@
 			doc = win.document,
 			global = win.global;
 		$("#dramasList").height($( document ).height()-100);
-		$("#video").height($( document ).height()-90);
-		$("#video").width($( document ).width()-410);
-		$("#video").css("visibility", "hidden");
-		$("iframe").remove();
-		$("body").find("div").each(function(index)
-		{
-			try {
-				if ($(this).attr("id").indexOf("beacon")!=-1)
-					$(this).remove();
-				}
-				catch(err) 
-				{}
-
-		});
-		$("body").find("script").remove();
-		$("body").find("noscript").remove();
+		$("#videoEpisode").height($( document ).height()-90);
+		$("#videoEpisode").width($( document ).width()-410);
+		$("#videoEpisode").css("visibility", "hidden");
+		$("video").css("visibility", "hidden");
 		layer1.load();
 	}
 	
